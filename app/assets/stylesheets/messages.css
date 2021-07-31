@@ -10,20 +10,107 @@
 .chat-header {
   height: 100px;
   padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.group-name {
+ margin-top: 36px;
+ color: #333;
+ font-size: 24px;
+}
+
+
+.chat-end {
+  margin-top: 40px;
+}
+
+.chat-end a{
+  border: 1px solid darkred;
+  padding: 20px;
+  text-decoration: none;
+  color: darkred;
 }
 
 .chat-center {
   height: calc(100vh - 100px - 90px);
   background-color: #fafafa;
   padding: 46px 40px 0;
+  overflow: scroll;
+}
+
+.message {
+  margin: 10px 0 0 0 ;
+}
+
+.upper-message{
+  display: flex;
+}
+
+.message-user {
+  color: #434a54;
+  font-size: 16px;
+}
+
+.message-date {
+  color: #999;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.lower-message {
+  margin-top: 10px;
+}
+
+.message-content {
+  color: #434a54;
+  font-size: 14px;
+  margin-bottom: 40px;
 }
 
 .chat-footer {
   background-color: #dddddd;
   height: 90px;
   padding: 20px 40px;
+  display: flex;
 }
 
+.form-input {
+  background-color: white;
+  width: 100%;
+  display: flex;
+}
+
+.form-message {
+  border: none;
+  height: 50px;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.form-submit {
+  background-color: #38AEF0;
+  border: none;
+  color: white;
+  font-size: 16px;
+  height: 50px;
+  margin-left: 15px;
+  padding: 0 20px;
+}
+
+.form-image {
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+.hidden {
+  display: none
+}
 
 .side-bar {
   background-color: #253141;
@@ -34,10 +121,40 @@
 .side-top {
   height: 100px;
   padding: 0 20px;
+  background-color: #253141;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-name a{
+  padding-left: 20px;
+  font-size: 16px;
+  color: #fafafa;
+  text-decoration: none;
+}
+
+.create-chat a{
+  padding: 14px;
+  color: deepskyblue;
+  font-size: 10px;
+  border: 1px solid lightblue;
+  text-decoration: none;
 }
 
 .side-main{
   height: calc(100vh - 100px);
   background-color: #2f3e51;
   padding: 0 20px;
+  overflow: scroll;
+}
+
+.room {
+  padding: 20px 20px 40px;
+}
+
+
+.room-name a{
+  text-decoration: none;
+  color: white;
 }
